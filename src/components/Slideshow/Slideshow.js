@@ -1,53 +1,23 @@
 import React from "react";
-import Carousel from "react-bootstrap/Carousel";
-import "./slideshow.css";
+import Carousel from "react-material-ui-carousel";
 import slideImages from "../../assets/slideshow_1.jpg";
-import slideImages2 from "../../assets/gradient.jpg"
-import 'bootstrap/dist/css/bootstrap.min.css';
+import style from "./slideshow.module.css";
+var items = [slideImages, slideImages, slideImages];
 
 const Slideshow = () => {
   return (
-    <div>
-      <Carousel>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={slideImages}
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={slideImages}
-            alt="Third slide"
-          />
-
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={slideImages2}
-            alt="Third slide"
-          />
-
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
-    </div>
+    <Carousel
+      autoPlay={false}
+      className={style.carouselItem}
+      navButtonsAlwaysVisible={true}
+      indicators={false}
+    //   animation="slide"
+      timeout={500}
+    >
+      {items.map((data) => (
+        <img className={style.photo} src={data} alt="headerImages" />
+      ))}
+    </Carousel>
   );
 };
 
