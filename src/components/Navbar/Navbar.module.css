@@ -8,6 +8,7 @@
     position: fixed;
     width: 100%;
     background-color: transparent;
+    z-index: 1;
 }
 
 .menu {
@@ -18,6 +19,7 @@
 .menu > li {
     list-style: none;
     margin: 0 2rem;
+    color: white;
 }
 
 .menu > li > p{

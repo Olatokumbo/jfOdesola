@@ -1,6 +1,7 @@
 import { Typography } from "@material-ui/core";
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
+import Slideshow from "../../components/Slideshow/Slideshow";
 import style from "./Home.module.css";
 const Home = () => {
   return (
@@ -13,7 +14,7 @@ const Home = () => {
           </Typography>
         </div>
         <div className={style.right}>
-          {/* <Typography>The Right Side</Typography> */}
+          <Slideshow/>
         </div>
       </div>
     </div>

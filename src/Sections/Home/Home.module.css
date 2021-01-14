@@ -5,8 +5,16 @@
     display: flex;
     height: 100%;
 }
-.left, .right{
+
+.main > .left{
+    display: none;
+}
+.left{
+    display: none;
     flex: 1;
+}
+.right{
+    flex: 2;
 }
 
 .left{
