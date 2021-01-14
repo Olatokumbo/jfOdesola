@@ -1,6 +1,25 @@
+.home{
+    height: 100vh;
+}
+.main{
+    display: flex;
+    height: 100%;
+}
+.left, .right{
+    flex: 1;
+}
+
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 3rem; */
+}
 .name{
-    font-size: 6rem;
+    font-size: 4rem !important;
+    font-weight: 700 !important;
     color: white;
+    max-width: 24rem;
 }
 .left{
     background: url("../../assets/gradient.jpg");

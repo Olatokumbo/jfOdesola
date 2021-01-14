@@ -2,9 +2,12 @@
 
 .navbar{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0.5rem;
+    justify-content: space-between;
+    padding: 0.9rem 4rem;
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
 }
 
 .menu {
@@ -19,6 +22,7 @@
 
 .menu > li > p{
     font-size: 0.9rem !important;
+    font-weight: lighter !important;
 }
 
 .menu > li > p:hover{
@@ -27,4 +31,5 @@
 .logo{
     font-family: 'Sacramento', cursive !important;
     font-size: 1.5rem !important;
+    color: white !important;
 }
