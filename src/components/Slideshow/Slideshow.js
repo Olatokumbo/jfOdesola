@@ -7,11 +7,14 @@ var items = [slideImages, slideImages, slideImages];
 const Slideshow = () => {
   return (
     <Carousel
-      autoPlay={false}
+      autoPlay={true}
       className={style.carouselItem}
-      navButtonsAlwaysVisible={true}
+      navButtonsAlwaysInvisible={true}
+      nav
       indicators={false}
+
     //   animation="slide"
+
       timeout={500}
     >
       {items.map((data) => (

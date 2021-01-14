@@ -1,0 +1,29 @@
+.about{
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+}
+.header{
+    font-size: x-large !important;
+}
+.aboutRight, .aboutLeft{
+    margin: 0 3rem;
+}
+.content{
+    max-width: 30rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.9rem;
+}
+.buttonContainer{
+    display: flex;
+    /* width: fit-content; */
+}
+.btn{
+    margin: 0.5rem 1rem !important;
+    border-radius: 0 !important;
+}
+.outlinedBtn{
+    border-width: 5px !important;
+    border-color: #3f51b5 !important;
+    /* color: #3f51b5 !important; */
+}

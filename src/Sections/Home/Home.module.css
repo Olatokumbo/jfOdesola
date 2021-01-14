@@ -9,10 +9,6 @@
 .main > .left{
     /* display: none; */
 }
-.left{
-    display: none;
-    flex: 1;
-}
 .right{
     flex: 2;
 }
@@ -21,6 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 1;
     /* padding: 3rem; */
 }
 .name{
@@ -34,4 +31,23 @@
     background-position: left;
     background-size: cover;
     background-attachment: fixed;
+}
+
+@media only screen and (max-width: 1400px){
+    /* .main > .left{
+        display: none;
+    } */
+    .right{
+        flex: 3;
+    }
+    .name{
+        font-size: 3rem !important;
+        max-width: 10rem;
+    }
+}
+
+@media only screen and (max-width: 1150px){
+    .main > .left{
+        display: none;
+    }
 }

@@ -35,3 +35,24 @@
     font-size: 1.5rem !important;
     color: white !important;
 }
+
+@media only screen and (max-width: 1150px){
+    .navbar{
+        padding: 1rem 2rem;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .navbar{
+        flex-direction: column;
+    }
+    .logo{
+        font-size: 1.3rem !important;
+    }
+    .menu > li {
+        margin: 0 1rem;
+    }
+    .menu > li > p{
+        font-size: 0.7rem !important;
+    }
+}
