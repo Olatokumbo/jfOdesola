@@ -1,0 +1,10 @@
+.name{
+    font-size: 6rem;
+    color: white;
+}
+.left{
+    background: url("../../assets/gradient.jpg");
+    background-position: left;
+    background-size: cover;
+    background-attachment: fixed;
+}
