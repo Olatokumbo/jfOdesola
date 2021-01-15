@@ -1,14 +1,16 @@
 import React from "react";
 import clsx from "clsx";
 import { Typography, Button } from "@material-ui/core";
-import Profile from "../../assets/profile.png"
+import Profile from "../../assets/profile.png";
+import Rectangle from "../../assets/rectangle.png";
 import style from "./About.module.css";
 
 const About = () => {
   return (
     <div className={style.about}>
       <div className={style.aboutLeft}>
-          <img src={Profile} alt="profile"/>
+        <img src={Profile} alt="profile" />
+        <img src={Rectangle} alt="rectangle" />
       </div>
       <div className={style.aboutRight}>
         <Typography className={style.header}>About JFO</Typography>
@@ -26,10 +28,20 @@ const About = () => {
           </Typography>
         </div>
         <div className={style.buttonContainer}>
-          <Button variant="contained" color="primary" className={style.btn} size="large">
+          <Button
+            variant="contained"
+            color="primary"
+            className={style.btn}
+            size="large"
+          >
             Lorem ipsum
           </Button>
-          <Button variant="outlined"  color="primary" className={clsx(style.btn, style.outlinedBtn)} size="large">
+          <Button
+            variant="outlined"
+            color="primary"
+            className={clsx(style.btn, style.outlinedBtn)}
+            size="large"
+          >
             Lorem ipsum
           </Button>
         </div>
