@@ -1,0 +1,45 @@
+.wisdomQuotes {
+    display: flex;
+    justify-content: centers;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+  background: rgb(122, 149, 201);
+  background: linear-gradient(
+    180deg,
+    rgba(122, 149, 201, 1) 0%,
+    rgba(104, 104, 127, 1) 100%
+  );
+}
+.headerTitle{
+    color: white !important;
+    font-weight: lighter !important;
+    font-size: 1.5rem !important;
+    /* font-family: 'Roboto', sans-serif !important; */
+    position: absolute;
+    margin-bottom: 0.5rem;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.content > img:last-child {
+  transform: rotate(180deg);
+  align-self: flex-end;
+  margin: 0 -3rem;
+}
+.content >img:first-child{
+    margin: 0 -3rem;
+}
+
+.content > img {
+    width: 2rem;
+    height: auto;
+    filter: invert(85%);
+}
+
+.message{
+    max-width:30rem !important;
+    color: white !important;
+    text-align: center !important;
+}
