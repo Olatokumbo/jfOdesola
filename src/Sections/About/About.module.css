@@ -1,41 +1,47 @@
-.about{
-    padding: 6rem 5rem;
-    display: flex;
-    justify-content: center;
+.about {
+  padding: 6rem 5rem;
+  display: flex;
+  justify-content: center;
 }
-.aboutLeft{
-    position: relative;
-    padding: 4rem 0;
+.aboutLeft {
+  position: relative;
+  padding: 4rem 0;
 }
-.aboutLeft > img:nth-child(1){
-    position: absolute;
-    top: 1rem;
-    right: -3rem;
+.aboutLeft > img:nth-child(1) {
+  position: absolute;
+  top: 1rem;
+  right: -3rem;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
-.header{
-    font-size: x-large !important;
+.header {
+  font-size: x-large !important;
 }
-.aboutRight, .aboutLeft{
-    margin: 0 3rem;
+.aboutRight,
+.aboutLeft {
+  margin: 0 3rem;
 }
-.content{
-    max-width: 30rem;
-    margin-top: 0.3rem;
-    margin-bottom: 0.9rem;
+.content {
+  max-width: 30rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.9rem;
 }
-.content > *{
-    margin: 1rem 0 !important;
+.content > * {
+  margin: 1rem 0 !important;
 }
-.buttonContainer{
-    display: flex;
-    /* width: fit-content; */
+.buttonContainer {
+  display: flex;
+  /* width: fit-content; */
 }
-.btn{
-    margin: 0.5rem 1rem !important;
-    border-radius: 0 !important;
+.btn {
+  margin: 0.5rem 1rem !important;
+  border-radius: 0 !important;
 }
-.outlinedBtn{
-    border-width: 5px !important;
-    border-color: #3f51b5 !important;
-    /* color: #3f51b5 !important; */
+.outlinedBtn {
+  border-width: 5px !important;
+  border-color: #3f51b5 !important;
+  /* color: #3f51b5 !important; */
 }
