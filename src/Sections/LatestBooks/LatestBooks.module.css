@@ -12,9 +12,10 @@
 }
 .bookList {
   overflow: auto;
-  width: 100%;
+  width: 90%;
   padding: 1rem 0;
   display: flex;
+  /* justify-content: center; */
 }
 .bookImage {
   width: auto;

@@ -9,7 +9,7 @@ const Slideshow = () => {
     <Carousel
       autoPlay={true}
       className={style.carouselItem}
-      navButtonsAlwaysInvisible={true}
+      navButtonsAlwaysVisible={true}
       nav
       indicators={false}
 

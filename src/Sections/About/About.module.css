@@ -1,5 +1,5 @@
 .about {
-  padding: 6rem 5rem;
+  padding: 6rem 0;
   display: flex;
   justify-content: center;
 }
@@ -44,4 +44,42 @@
   border-width: 5px !important;
   border-color: #3f51b5 !important;
   /* color: #3f51b5 !important; */
+}
+
+
+@media only screen and (max-width:1000px){
+  .about{
+    flex-direction: column;
+  }
+  .aboutLeft{
+    width: fit-content;
+    margin: auto;
+  }
+  .aboutRight{
+    width: fit-content;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width:900px){
+  .about{
+    padding: 2rem 0;
+  }
+  /* .header{
+    text-align: center;
+  } */
+  .aboutLeft{
+    padding: 3rem;
+  }
+  .aboutLeft > img:nth-child(1) {
+    width: 17rem;
+    right: 0;
+  }
+  .aboutLeft > img:nth-child(2) {
+    width: 15rem;
+  }
+  .buttonContainer{
+    width: fit-content;
+    margin: auto;
+  }
 }
