@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+.galleries{
+    padding: 2rem;
+    background-color: aliceblue;
+}
+
+.title{
+    font-size: 2.5rem !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 700 !important;
+    color: #797979 !important;
+    margin-bottom: 1rem !important;
+}
