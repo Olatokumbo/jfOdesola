@@ -3,6 +3,7 @@ import Home from "./Sections/Home/Home";
 import About from "./Sections/About/About";
 import WisdomQuotes from "./Sections/WisdomQuotes/WisdomQuotes";
 import LatestBooks from "./Sections/LatestBooks/LatestBooks";
+import FaithLift from "./Sections/FaithLift/FaithLift";
 import "./App.css";
 const App = () =>{
     return(
@@ -11,6 +12,7 @@ const App = () =>{
             <About/>
             <WisdomQuotes/>
             <LatestBooks/>
+            <FaithLift/>
         </div>
     )
 }
