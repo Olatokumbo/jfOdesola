@@ -25,6 +25,7 @@
     font-weight: 700 !important;
     color: white;
     max-width: 24rem;
+    text-align: center;
 }
 .left{
     background: url("../../assets/gradient.jpg");

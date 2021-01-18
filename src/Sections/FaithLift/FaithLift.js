@@ -1,5 +1,6 @@
 import React from "react";
-import { Typography, Card, CardContent } from "@material-ui/core";
+import { Typography, Card, CardContent, Link } from "@material-ui/core";
+import ReactPlayer from "react-player";
 import style from "./FaithLift.module.css";
 
 const FaithLift = () => {
@@ -41,7 +42,20 @@ const FaithLift = () => {
           </Card>
         </div>
       </div>
-      <div className={style.right}></div>
+      <div className={style.right}>
+        <div className={style.video}>
+          <ReactPlayer
+            url="https://www.youtube.com/watch?v=fVgDfeacXQ8"
+            controls={true}
+          />
+          <div className={style.videoContent}>
+            <Typography>Please check out our YouTube Channel&nbsp;</Typography>
+            <Typography>
+              <Link target="_blank" href="https://www.youtube.com/channel/UCbvSvzeLnUrT9XfYqSWeemQ">Here</Link>
+            </Typography>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

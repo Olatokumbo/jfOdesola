@@ -8,6 +8,10 @@
 }
 .right{
     flex: 3;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .title {
     font-family: 'Roboto', sans-serif;
@@ -18,14 +22,16 @@
 .content {
   margin: 1rem 0 !important;
   width: 30rem;
+  color: #797979;
 }
 
 
 .card1, .card2{
-    padding: 0 1rem !important;
+    padding-top: 3rem !important;
+    /* padding: 0 1rem !important; */
     background-color: #8082CD !important;
     margin: 1rem 0 !important;
-    /* border-radius: 10px !important; */
+    border-radius: 10px !important;
 }
 .card2{
     background-color: #F5385A !important;
@@ -37,4 +43,20 @@
 }
 .cardContent > p{
     color: white !important;
+}
+
+.video{
+    padding: 1.3rem;
+    border-radius: 20px;
+    background: url("../../assets/gradient.jpg");
+    background-position: left;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.videoContent{
+    margin: 0.5rem auto;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    color: white;
 }
