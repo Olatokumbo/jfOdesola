@@ -5,11 +5,13 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 import InstagramEmbed from "react-instagram-embed";
+import Socialbar from "../../components/Socialbar/Socialbar";
 import style from "./SocialMedia.module.css";
 
 const SocialMedia = () => {
   return (
     <div className={style.socialMedia}>
+      <Socialbar/>
       <Typography className={style.title}>Socials</Typography>
       <div>
         <IconButton>

@@ -1,0 +1,40 @@
+.socialbar{
+    position: fixed;
+    top: 5rem;
+    left: 0;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.instagram, .facebook, .twitter{
+    padding: 0.5rem;
+    margin: 2px 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    transition: 2s;
+}
+.instagram:hover, .facebook:hover, .twitter:hover{
+    cursor: pointer;
+    width: 7rem;
+}
+
+/* .instagram:hover{
+    width: 7rem;
+} */
+.instagram{
+    background-color: #ec21baaf;
+}
+.facebook{
+    background-color: rgb(19, 138, 2500.822);
+}
+.twitter{
+    background-color: rgba(6, 164, 255, 0.822);
+}
+.icon{
+    color: white !important;
+}
