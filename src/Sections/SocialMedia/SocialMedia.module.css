@@ -10,3 +10,14 @@
     color: #797979 !important;
     margin-bottom: 1rem !important;
 }
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+.container > div:first-child{
+    border: lightgray 2px solid !important;
+}
+.container > div {
+    margin: 2rem !important;
+}

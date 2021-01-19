@@ -51,7 +51,7 @@ const FaithLift = () => {
           <div className={style.videoContent}>
             <Typography>Please check out our YouTube Channel&nbsp;</Typography>
             <Typography>
-              <Link target="_blank" href="https://www.youtube.com/channel/UCbvSvzeLnUrT9XfYqSWeemQ">Here</Link>
+              <Link target="_blank" href="https://www.youtube.com/playlist?list=PLc6HQFsla64aokhHbgB5Xu6_nK5SXPQKI">Here</Link>
             </Typography>
           </div>
         </div>
