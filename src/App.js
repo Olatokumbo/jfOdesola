@@ -5,6 +5,7 @@ import WisdomQuotes from "./Sections/WisdomQuotes/WisdomQuotes";
 import LatestBooks from "./Sections/LatestBooks/LatestBooks";
 import FaithLift from "./Sections/FaithLift/FaithLift";
 import Galleries from "./Sections/Galleries/Galleries";
+import SocialMedia from "./Sections/SocialMedia/SocialMedia";
 import "./App.css";
 const App = () =>{
     return(
@@ -15,6 +16,7 @@ const App = () =>{
             <LatestBooks/>
             <FaithLift/>
             <Galleries/>
+            <SocialMedia/>
         </div>
     )
 }
