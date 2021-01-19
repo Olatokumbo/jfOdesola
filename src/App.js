@@ -6,6 +6,7 @@ import LatestBooks from "./Sections/LatestBooks/LatestBooks";
 import FaithLift from "./Sections/FaithLift/FaithLift";
 import Galleries from "./Sections/Galleries/Galleries";
 import SocialMedia from "./Sections/SocialMedia/SocialMedia";
+import Contact from "./Sections/Contact/Contact";
 import "./App.css";
 const App = () =>{
     return(
@@ -17,6 +18,7 @@ const App = () =>{
             <FaithLift/>
             <Galleries/>
             <SocialMedia/>
+            <Contact/>
         </div>
     )
 }

@@ -30,7 +30,7 @@ const SocialMedia = () => {
         />
         <InstagramEmbed
           url="https://www.instagram.com/p/CKLjCOgF_Wx/"
-          clientAccessToken="REACT_APP_APP_ID|REACT_APP_SECRET_KEY"
+          clientAccessToken="1830281583805092|dc7dc8013da9f7a6b4f5479124e3c4cf"
           maxWidth={320}
           hideCaption={false}
           containerTagName="div"
