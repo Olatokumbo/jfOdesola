@@ -1,6 +1,6 @@
 import React from "react";
 import { TextField, Typography, Button } from "@material-ui/core";
-import Envelope from "../../assets/envelope.png"
+import Envelope from "../../assets/envelope.png";
 import style from "./Contact.module.css";
 const Contact = () => {
   return (

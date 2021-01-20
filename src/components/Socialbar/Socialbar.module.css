@@ -16,16 +16,16 @@
     justify-content: center;
     align-items: center;
     width: 2.5rem;
-    transition: 2s;
+    transition: 1s;
 }
 .instagram:hover, .facebook:hover, .twitter:hover{
     cursor: pointer;
     width: 7rem;
 }
 
-/* .instagram:hover{
-    width: 7rem;
-} */
+.instagram:hover > .title, .facebook:hover > .title, .twitter:hover > .title {
+    display: block;
+}
 .instagram{
     background-color: #ec21baaf;
 }
@@ -37,4 +37,10 @@
 }
 .icon{
     color: white !important;
+}
+
+.title {
+    font-size: 0.8rem !important;
+    color: white !important;
+    display: none; 
 }

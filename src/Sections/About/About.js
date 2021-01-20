@@ -16,15 +16,18 @@ const About = () => {
         <Typography className={style.header}>About JFO</Typography>
         <div className={style.content}>
           <Typography component="p">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip exea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            Johnson Funso Odesola is a distinguished specialist in Divinity
+            after many academic forays through over nine local and international
+            tertiary institutions where he obtained six PhD's, two masters
+            degrees, a postgraduate diploma, three Bachelor's degrees, a Higher
+            National Diploma, an Ordinary national diploma, and Diplomas in
+            various academic and theological Disciplines.
           </Typography>
           <Typography>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam,
+            Following over forty meritorious years dedicated service in RCCG,
+            odesola was appointed Assistant General Overseer on Admin &
+            personnel and doubles as Pastor In charge (PIC), RCCG Region 1,
+            Ebute Metta, Lagos.
           </Typography>
         </div>
         <div className={style.buttonContainer}>
