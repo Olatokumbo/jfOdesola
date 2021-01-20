@@ -15,12 +15,12 @@ const App = () =>{
             <Home/>
             <About/>
             <WisdomQuotes/>
-            <LatestBooks/>
+            {/* <LatestBooks/>
             <FaithLift/>
             <Galleries/>
             <SocialMedia/>
             <Contact/>
-            <Footer/>
+            <Footer/> */}
         </div>
     )
 }

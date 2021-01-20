@@ -64,7 +64,7 @@
 
 @media only screen and (max-width:900px){
   .about{
-    padding: 2rem 0;
+    padding: 2rem 1rem;
   }
   /* .header{
     text-align: center;
@@ -74,7 +74,7 @@
   }
   .aboutLeft > img:nth-child(1) {
     width: 17rem;
-    right: 0;
+    right: 15px;
   }
   .aboutLeft > img:nth-child(2) {
     width: 15rem;

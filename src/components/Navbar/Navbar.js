@@ -1,8 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import { Typography } from "@material-ui/core";
 import style from "./Navbar.module.css";
 
 const Navbar = () => {
+  const [buttonState, setButtonState] = useState(false);
   return (
     <div className={style.navbar}>
       <Typography className={style.logo}>Johnson Odesola</Typography>
@@ -20,10 +21,10 @@ const Navbar = () => {
           <Typography>Contact</Typography>
         </li>
       </ul>
-      <div className={style.hamburger}>
-        <span className={style.rectangle}></span>
-        <span className={style.rectangle}></span>
-        <span className={style.rectangle}></span>
+      <div className={buttonState?style.change :style.hamburger} onClick={()=>setButtonState((prevState)=>!prevState)}>
+        <span className={style.rectangle1}></span>
+        <span className={style.rectangle2}></span>
+        <span className={style.rectangle3}></span>
       </div>
     </div>
   );
