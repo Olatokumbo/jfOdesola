@@ -7,6 +7,7 @@ import FaithLift from "./Sections/FaithLift/FaithLift";
 import Galleries from "./Sections/Galleries/Galleries";
 import SocialMedia from "./Sections/SocialMedia/SocialMedia";
 import Contact from "./Sections/Contact/Contact";
+import Footer from "./Sections/Footer/Footer";
 import "./App.css";
 const App = () =>{
     return(
@@ -19,6 +20,7 @@ const App = () =>{
             <Galleries/>
             <SocialMedia/>
             <Contact/>
+            <Footer/>
         </div>
     )
 }

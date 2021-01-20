@@ -37,16 +37,16 @@ const About = () => {
             className={style.btn}
             size="large"
           >
-            Lorem ipsum
+            Learn more
           </Button>
-          <Button
+          {/* <Button
             variant="outlined"
             color="primary"
             className={clsx(style.btn, style.outlinedBtn)}
             size="large"
           >
             Lorem ipsum
-          </Button>
+          </Button> */}
         </div>
       </div>
     </div>
