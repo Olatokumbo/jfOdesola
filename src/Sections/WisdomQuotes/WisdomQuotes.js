@@ -10,8 +10,8 @@ const WisdomQuotes = () => {
       <div className={style.content}>
         <img src={quoteMarks} alt="quotes" />
         <Typography className={style.message}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua
+          A life without Jesus is a life that is totally wasted. You must know that it is only Jesus that
+          adds value to life
         </Typography>
         <img src={quoteMarks} alt="quotes" />
       </div>

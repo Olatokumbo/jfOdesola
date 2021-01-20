@@ -8,15 +8,15 @@ import { Typography } from "@material-ui/core";
 const Socialbar = () => {
   return (
     <div className={style.socialbar}>
-      <div className={style.instagram}>
+      <div className={style.instagram} onClick={()=>window.open("https://www.instagram.com/pastorjfodesola", "_blank")}>
         <InstagramIcon className={style.icon} />
         <Typography className={style.title}>Instagram</Typography>
       </div>
-      <div className={style.facebook}>
+      <div className={style.facebook} onClick={()=>window.open("https://www.facebook.com/JFOdesola", "_blank")}>
         <FacebookIcon className={style.icon} />
         <Typography className={style.title}>Facebook</Typography>
       </div>
-      <div className={style.twitter}>
+      <div className={style.twitter} onClick={()=>window.open("https://twitter.com/pastorjfodesola", "_blank")}>
         <TwitterIcon className={style.icon} />
         <Typography className={style.title}>Twitter</Typography>
       </div>

@@ -28,16 +28,16 @@ const Footer = () => {
         <div className={style.lowerContent}>
           <div className={style.rectangle}></div>
           <div className={style.socials}>
-            <IconButton size="small">
+            <IconButton size="small" onClick={()=>window.open("https://www.youtube.com/channel/UCbvSvzeLnUrT9XfYqSWeemQ", "_blank")}>
               <YouTubeIcon className={style.icon} />
             </IconButton>
-            <IconButton size="small">
+            <IconButton size="small"  onClick={()=>window.open("https://www.instagram.com/pastorjfodesola", "_blank")}>
               <InstagramIcon className={style.icon} />
             </IconButton>
-            <IconButton size="small">
+            <IconButton size="small"  onClick={()=>window.open("https://www.facebook.com/JFOdesola", "_blank")}>
               <FacebookIcon className={style.icon} />
             </IconButton>
-            <IconButton size="small">
+            <IconButton size="small"  onClick={()=>window.open("https://twitter.com/pastorjfodesola", "_blank")}>
               <TwitterIcon className={style.icon} />
             </IconButton>
           </div>

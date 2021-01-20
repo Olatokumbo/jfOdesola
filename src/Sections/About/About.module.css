@@ -38,7 +38,7 @@
   /* width: fit-content; */
 }
 .btn {
-  margin: 0.5rem 1rem !important;
+  margin: 0.5rem 0rem !important;
   border-radius: 0 !important;
 }
 .outlinedBtn {
