@@ -53,3 +53,9 @@
   background-color: white !important;
   /* border-radius: 10px !important; */
 }
+
+@media only screen and (max-width: 650px){
+  .contactLeft{
+    display: none;
+  }
+}

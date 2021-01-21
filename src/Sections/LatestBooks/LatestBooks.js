@@ -14,7 +14,6 @@ const LatestBooks = () => {
           <img src={BookImage} alt='book1' className={style.bookImage}/>
           <img src={BookImage} alt='book1' className={style.bookImage}/>
           <img src={BookImage} alt='book1' className={style.bookImage}/>
-          <img src={BookImage} alt='book1' className={style.bookImage}/>
       </div>
         <Button  className={style.btn} variant="contained" color="primary" size="large" onClick={()=>window.open("http://bit.ly/jfobooks", "_blank")}>See More</Button>
     </div>

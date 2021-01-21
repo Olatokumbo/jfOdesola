@@ -64,6 +64,9 @@
     .navbar{
         padding: 1rem 2rem;
     }
+    .menu > li{
+        margin: 0 1rem;
+    }
 }
 
 @media only screen and (max-width: 650px){

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 .galleries{
     padding: 2rem 5rem;
-    background-color: aliceblue;
+    background-color: rgb(242, 242, 253);
 }
 
 .title{
@@ -11,3 +11,10 @@
     color: #797979 !important;
     margin-bottom: 1rem !important;
 }
+
+@media only screen and (max-width: 675px){
+    .galleries{
+        padding: 1rem 5px;
+        margin: auto;
+    }
+  }

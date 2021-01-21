@@ -21,11 +21,15 @@
 }
 .content {
   margin: 1rem 0 !important;
-  width: 30rem;
+  width: 30rem !important;
   color: #797979;
   font-size: 0.9rem !important;
 }
 
+.cardContainer{
+    display: flex;
+    flex-direction: column;
+}
 
 .card1, .card2{
     padding-top: 3rem !important;
@@ -33,6 +37,7 @@
     background-color: #8082CD !important;
     margin: 1rem 0 !important;
     border-radius: 10px !important;
+    width: fit-content !important;
 }
 .card2{
     background-color: #F5385A !important;
@@ -54,10 +59,45 @@
     background-size: cover;
     background-attachment: fixed;
 }
+
 .videoContent{
     margin: 0.5rem auto;
     display: flex;
     align-items: center;
     width: fit-content;
+    justify-content: center;
     color: white;
+}
+
+@media only screen and (max-width: 1246px){
+    .faithLift{
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .cardContainer{
+        align-items: center;
+    }
+  }
+
+@media only screen and (max-width: 730px){
+    .video > div{
+        width: 26rem !important;
+        /* height: 10rem !important; */
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .content{
+        width: auto !important;
+    }
+    .video > div{
+        width: 24rem !important;
+        /* height: 10rem !important; */
+    }
+    .videoContent{
+        flex-direction: column;
+    }
+    .videoContent >p:first-child{
+        font-size: 0.7rem !important;
+    }
 }
