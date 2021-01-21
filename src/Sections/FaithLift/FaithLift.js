@@ -7,7 +7,7 @@ const FaithLift = () => {
   return (
     <div className={style.faithLift}>
       <div className={style.left}>
-        <Typography className={style.title}>Faith Lift Poductions</Typography>
+        <Typography className={style.title}>Faith Lift Productions</Typography>
         <Typography component="p" className={style.content}>
           Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
           suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?

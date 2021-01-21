@@ -1,7 +1,7 @@
 import React from "react";
 import clsx from "clsx";
 import { Typography, Button } from "@material-ui/core";
-import Profile from "../../assets/profile.png";
+import Profile from "../../assets/main.jpg";
 import Rectangle from "../../assets/rectangle.png";
 import style from "./About.module.css";
 

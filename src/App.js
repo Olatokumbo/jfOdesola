@@ -18,7 +18,7 @@ const App = () =>{
             <LatestBooks/>
             <FaithLift/>
             <Galleries/>
-            {/* <SocialMedia/> */}
+            <SocialMedia/>
             <Contact/>
             <Footer/>
         </div>
