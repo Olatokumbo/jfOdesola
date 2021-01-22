@@ -18,7 +18,7 @@ const Galleries = () => {
     setViewerIsOpen(false);
   };
   return (
-    <div className={style.galleries}>
+    <div className={style.galleries} id="media">
       <Typography className={style.title}>Gallery</Typography>
       <Gallery photos={Photos} direction="column" onClick={openLightbox}/>
       <ModalGateway>

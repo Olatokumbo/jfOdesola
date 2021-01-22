@@ -7,7 +7,7 @@
 }
 
 .main > .left{
-    /* display: none; */
+    display: none;
 }
 .right{
     flex: 2;

@@ -4,14 +4,14 @@ import Envelope from "../../assets/envelope.png";
 import style from "./Contact.module.css";
 const Contact = () => {
   return (
-    <div className={style.contact}>
+    <div className={style.contact} id="contact"> 
       <div className={style.contactContainer}>
         <div className={style.contactLeft}>
             <img className={style.envelope} src={Envelope} alt="Envelope"/>
         </div>
         <div className={style.contactRight}>
           {/* <form> */}
-            <Typography className={style.title}>Contact Me...</Typography>
+            <Typography className={style.title}>Message Me...</Typography>
             <TextField
               className={style.input}
               name="name"

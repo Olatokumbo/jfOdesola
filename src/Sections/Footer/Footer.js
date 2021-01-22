@@ -5,6 +5,7 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import YouTubeIcon from "@material-ui/icons/YouTube";
 import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
+import { Link } from "react-scroll";
 import style from "./Footer.module.css";
 
 const Footer = () => {
@@ -22,9 +23,19 @@ const Footer = () => {
         </div>
       </div>
       <div className={style.right}>
+      <Link
+            activeClass="active"
+            to="home"
+            offset={-80}
+            spy={true}
+            smooth={true}
+            duration={1000}
+            delay={500}
+          >
         <button className={style.upBtn}>
           <KeyboardArrowUpIcon />
         </button>
+        </Link>
         <div className={style.lowerContent}>
           <div className={style.rectangle}></div>
           <div className={style.socials}>

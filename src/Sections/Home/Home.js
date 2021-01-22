@@ -5,12 +5,12 @@ import Slideshow from "../../components/Slideshow/Slideshow";
 import style from "./Home.module.css";
 const Home = () => {
   return (
-    <div className={style.home}>
+    <div className={style.home} id="home">
       <Navbar />
       <div className={style.main}>
         <div className={style.left}>
           <Typography className={style.name}>
-          Johnson Funso Odesola
+          Pastor Johnson Funso Odesola
           </Typography>
         </div>
         <div className={style.right}>

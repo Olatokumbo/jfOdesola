@@ -20,6 +20,10 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+.right >a {
+  text-align: end;
+}
 .lowerContent{
   display: flex;
   flex-direction: column;

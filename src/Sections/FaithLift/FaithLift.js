@@ -9,8 +9,9 @@ const FaithLift = () => {
       <div className={style.left}>
         <Typography className={style.title}>Faith Lift Productions</Typography>
         <Typography component="p" className={style.content}>
-          Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-          suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+          FAITHLIFT PRODUCTIONS & J.F. ODESOLA FILMS is a movie production
+          outfit that produces high quality movies with decent christian
+          teachings.
         </Typography>
         <Typography compnent="p" className={style.content}>
           Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
@@ -51,7 +52,12 @@ const FaithLift = () => {
           <div className={style.videoContent}>
             <Typography>Please check out our YouTube Channel&nbsp;</Typography>
             <Typography>
-              <Link target="_blank" href="https://www.youtube.com/playlist?list=PLc6HQFsla64aokhHbgB5Xu6_nK5SXPQKI">Here</Link>
+              <Link
+                target="_blank"
+                href="https://www.youtube.com/playlist?list=PLc6HQFsla64aokhHbgB5Xu6_nK5SXPQKI"
+              >
+                Here
+              </Link>
             </Typography>
           </div>
         </div>

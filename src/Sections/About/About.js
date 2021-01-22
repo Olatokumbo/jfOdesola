@@ -7,7 +7,7 @@ import style from "./About.module.css";
 
 const About = () => {
   return (
-    <div className={style.about}>
+    <div className={style.about} id="about">
       <div className={style.aboutLeft}>
         <img src={Profile} alt="profile" />
         <img src={Rectangle} alt="rectangle" />
@@ -37,7 +37,7 @@ const About = () => {
             className={style.btn}
             size="large"
           >
-            Learn more
+            Read More
           </Button>
           {/* <Button
             variant="outlined"
