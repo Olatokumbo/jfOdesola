@@ -1,0 +1,14 @@
+.biography {
+  padding: 0 3rem 2rem 3rem;
+}
+
+.content {
+  margin-top: 5px !important;
+  font-size: 0.8rem !important;
+  color: rgb(83, 83, 83) !important;
+}
+@media only screen and (max-width: 760px){
+    .biography{
+        padding: 0 1rem 2rem 1rem;
+    }
+}

@@ -1,5 +1,9 @@
+.aboutMain{
+  display: flex;
+  flex-direction: column;
+}
 .about {
-  padding: 6rem 0;
+  padding: 6rem 6rem 1rem 6rem;
   display: flex;
   justify-content: center;
 }
