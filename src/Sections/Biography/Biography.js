@@ -7,7 +7,7 @@ const Biography = ({show}) => {
     <div className={style.biography}>
       <div className={style.contentContainer}>
         <Typography component="p" className={style.content}>
-          Johnson Funso Odesola born into the family of late PA. Samuel & late
+          Johnson Funso Odesola was born into the family of late PA. Samuel & late
           Madam Mariani Ereola Odesola of Igbajo town, Boluwaduro local
           Government in Osun State on June 5th 1959. Pastor Johnson, had his
           early education at Elementary Primary School, Igbajo and thereafter

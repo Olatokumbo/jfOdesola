@@ -45,16 +45,21 @@ const FaithLift = () => {
       </div>
       <div className={style.right}>
         <div className={style.video}>
-          <ReactPlayer
-            url="https://www.youtube.com/watch?v=fVgDfeacXQ8"
-            controls={true}
-          />
+          <iframe
+            title='q3w4e56'
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/videoseries?list=PLc6HQFsla64aokhHbgB5Xu6_nK5SXPQKI"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
           <div className={style.videoContent}>
             <Typography>Please check out our YouTube Channel&nbsp;</Typography>
             <Typography>
               <Link
                 target="_blank"
-                href="https://www.youtube.com/playlist?list=PLc6HQFsla64aokhHbgB5Xu6_nK5SXPQKI"
+                href="https://www.youtube.com/channel/UCbvSvzeLnUrT9XfYqSWeemQ"
               >
                 Here
               </Link>

@@ -80,7 +80,7 @@
   }
 
 @media only screen and (max-width: 730px){
-    .video > div{
+    .video > iframe{
         width: 26rem !important;
         /* height: 10rem !important; */
     }
@@ -90,7 +90,7 @@
     .content{
         width: auto !important;
     }
-    .video > div{
+    .video > iframe{
         width: 24rem !important;
         /* height: 10rem !important; */
     }
