@@ -10,11 +10,28 @@ const Navbar = () => {
     if (window.scrollY >= 20) setNavbar(true);
     else setNavbar(false);
   };
+  const changeMenu = () => {
+    //  console.log(window.innerWidth);
+    if (window.innerWidth > 780) {
+      setButtonState(false);
+    }
+  };
   window.addEventListener("scroll", changeBackground);
+  window.addEventListener("resize", changeMenu);
   return (
     <div className={navbar ? style.navbarActive : style.navbar}>
-      <Typography className={style.logo}>Johnson Odesola</Typography>
-      <ul className={style.menu}>
+      <div className={style.header}>
+        <Typography className={style.logo}>Johnson Odesola</Typography>
+        <div
+          className={buttonState ? style.change : style.hamburger}
+          onClick={() => setButtonState((prevState) => !prevState)}
+        >
+          <span className={style.rectangle1}></span>
+          <span className={style.rectangle2}></span>
+          <span className={style.rectangle3}></span>
+        </div>
+      </div>
+      <ul className={!buttonState ? style.menu : style.menuVertical}>
         <li>
           <Link
             activeClass="active"
@@ -64,14 +81,6 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
-      <div
-        className={buttonState ? style.change : style.hamburger}
-        onClick={() => setButtonState((prevState) => !prevState)}
-      >
-        <span className={style.rectangle1}></span>
-        <span className={style.rectangle2}></span>
-        <span className={style.rectangle3}></span>
-      </div>
     </div>
   );
 };

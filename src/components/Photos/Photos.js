@@ -23,14 +23,14 @@ export const Photos = [
         width: 4,
         height: 4
     },
-    {
-        src: Slideshow,
-        width: 4,
-        height: 3
-    },
-    {
-        src: Slideshow2,
-        width: 4,
-        height: 3
-    }
+    // {
+    //     src: Slideshow,
+    //     width: 4,
+    //     height: 3
+    // },
+    // {
+    //     src: Slideshow2,
+    //     width: 4,
+    //     height: 3
+    // }
 ]

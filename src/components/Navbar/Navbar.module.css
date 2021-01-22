@@ -23,12 +23,27 @@
     z-index: 1;
     transition: 1s;
 }
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 .menu {
     display: flex;
     flex-direction: row;
+    background-color: #1010106b;
+    border-radius: 10px;
 }
 
-.menu > li {
+.menuVertical{
+    text-align: center;
+    background-color: #10101085;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.menu > li, .menuVertical > li {
     list-style: none;
     margin: 0 0.8rem;
     color: white;
@@ -62,6 +77,7 @@
     flex-direction: column;
     display: none;
 }
+
 .rectangle1, .rectangle2, .rectangle3{
     height: 3px;
     width: 26px;
@@ -97,6 +113,10 @@
     .navbar{
         /* flex-direction: column; */
         align-items: inherit;
+        flex-direction: column;
+    }
+    .navbarActive{
+        flex-direction: column;
     }
     .logo{
         /* font-size: 1.3rem !important; */
