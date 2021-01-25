@@ -11,7 +11,7 @@ import style from "./LatestBooks.module.css";
 
 const LatestBooks = () => {
   return (
-    <div className={style.latestBooks}>
+    <div className={style.latestBooks} id="books">
       <Typography className={style.headerTitle}>Latest Books</Typography>
      <Fade top cascade>
      <div className={style.bookList}>

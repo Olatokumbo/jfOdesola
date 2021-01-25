@@ -5,7 +5,7 @@ import style from "./FaithLift.module.css";
 
 const FaithLift = () => {
   return (
-    <div className={style.faithLift}>
+    <div className={style.faithLift} id="faithlift">
       <div className={style.left}>
         <Typography className={style.title}>Faith Lift Productions</Typography>
         <Typography component="p" className={style.content}>

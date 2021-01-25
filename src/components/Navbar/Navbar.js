@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { Typography } from "@material-ui/core";
+import { Typography, Menu, MenuItem } from "@material-ui/core";
 import { Link } from "react-scroll";
 import style from "./Navbar.module.css";
 
 const Navbar = () => {
   const [buttonState, setButtonState] = useState(false);
   const [navbar, setNavbar] = useState(false);
+  const [anchorEl, setAnchorEl] = React.useState(null);
   const changeBackground = () => {
     if (window.scrollY >= 20) setNavbar(true);
     else setNavbar(false);
@@ -14,8 +15,17 @@ const Navbar = () => {
     //  console.log(window.innerWidth);
     if (window.innerWidth > 780) {
       setButtonState(false);
+      handleClose();
     }
   };
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
   window.addEventListener("scroll", changeBackground);
   window.addEventListener("resize", changeMenu);
   return (
@@ -59,15 +69,63 @@ const Navbar = () => {
         <li>
           <Link
             activeClass="active"
-            to="media"
+            // to="media"
             offset={-80}
             spy={true}
             smooth={true}
             duration={500}
+            onClick={handleClick}
           >
             <Typography>Media</Typography>
           </Link>
         </li>
+        <Menu
+        id="simple-menu"
+        anchorEl={anchorEl}
+        keepMounted
+        open={Boolean(anchorEl)}
+        onClose={handleClose}
+      >
+       <li className={style.menuItem}>
+       <Link
+            activeClass="active"
+            to="books"
+            offset={-80}
+            spy={true}
+            smooth={true}
+            duration={500}
+            onClick={handleClose}
+          >
+            <Typography>Books</Typography>
+          </Link>
+       </li>
+       <li className={style.menuItem}>
+       <Link
+            activeClass="active"
+            to="faithlift"
+            offset={-80}
+            spy={true}
+            smooth={true}
+            duration={500}
+            onClick={handleClose}
+          >
+            <Typography>FaithLift</Typography>
+          </Link>
+       </li>
+       <li className={style.menuItem}>
+       <Link
+            activeClass="active"
+            to="gallery"
+            offset={-80}
+            spy={true}
+            smooth={true}
+            duration={500}
+            onClick={handleClose}
+          >
+            <Typography>Gallery</Typography>
+          </Link>
+       </li>
+      </Menu>
         <li>
           <Link
             activeClass="active"

@@ -35,6 +35,18 @@
     background-color: #1010106b;
     border-radius: 10px;
 }
+.menuItem{
+    outline: none;
+    transition: 0.3s;
+    padding: 0.2rem 0.8rem;
+}
+
+.menuItem:hover{
+    background-color: rgba(207, 207, 207, 0.5);
+}
+.menuItem > a > p{
+    text-align: center !important;
+}
 
 .menuVertical{
     text-align: center;
