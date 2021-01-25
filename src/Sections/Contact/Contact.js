@@ -1,16 +1,20 @@
 import React from "react";
 import { TextField, Typography, Button } from "@material-ui/core";
 import Envelope from "../../assets/envelope.png";
+import Fade from "react-reveal/Fade";
 import style from "./Contact.module.css";
 const Contact = () => {
   return (
-    <div className={style.contact} id="contact"> 
+    <div className={style.contact} id="contact">
       <div className={style.contactContainer}>
-        <div className={style.contactLeft}>
-            <img className={style.envelope} src={Envelope} alt="Envelope"/>
-        </div>
-        <div className={style.contactRight}>
-          {/* <form> */}
+        <Fade left>
+          <div className={style.contactLeft}>
+            <img className={style.envelope} src={Envelope} alt="Envelope" />
+          </div>
+        </Fade>
+        <Fade right>
+          <div className={style.contactRight}>
+            {/* <form> */}
             <Typography className={style.title}>Message Me...</Typography>
             <TextField
               className={style.input}
@@ -39,9 +43,16 @@ const Contact = () => {
                 shrink: true,
               }}
             />
-            <Button className={style.submitBtn} variant="contained" color="secondary">Submit</Button>
-          {/* </form> */}
-        </div>
+            <Button
+              className={style.submitBtn}
+              variant="contained"
+              color="secondary"
+            >
+              Submit
+            </Button>
+            {/* </form> */}
+          </div>
+        </Fade>
       </div>
     </div>
   );

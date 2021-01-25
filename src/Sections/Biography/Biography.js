@@ -1,11 +1,13 @@
 import React from "react";
 import { Typography } from "@material-ui/core";
+import Pulse from 'react-reveal/Pulse';
 import style from "./Biography.module.css";
 const Biography = ({show}) => {
   if(show)
   return (
     <div className={style.biography}>
-      <div className={style.contentContainer}>
+     <Pulse>
+     <div className={style.contentContainer}>
         <Typography component="p" className={style.content}>
           Johnson Funso Odesola was born into the family of late PA. Samuel & late
           Madam Mariani Ereola Odesola of Igbajo town, Boluwaduro local
@@ -83,6 +85,7 @@ const Biography = ({show}) => {
           is a fan of table tennis and volleyball.
         </Typography>
       </div>
+     </Pulse>
     </div>
   );
   else

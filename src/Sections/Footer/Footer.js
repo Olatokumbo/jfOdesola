@@ -6,6 +6,7 @@ import TwitterIcon from "@material-ui/icons/Twitter";
 import YouTubeIcon from "@material-ui/icons/YouTube";
 import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 import { Link } from "react-scroll";
+import Fade from 'react-reveal/Fade';
 import style from "./Footer.module.css";
 
 const Footer = () => {
@@ -38,6 +39,7 @@ const Footer = () => {
         </Link>
         <div className={style.lowerContent}>
           <div className={style.rectangle}></div>
+          <Fade top cascade>
           <div className={style.socials}>
             <IconButton size="small" onClick={()=>window.open("https://www.youtube.com/channel/UCbvSvzeLnUrT9XfYqSWeemQ", "_blank")}>
               <YouTubeIcon className={style.icon} />
@@ -52,6 +54,7 @@ const Footer = () => {
               <TwitterIcon className={style.icon} />
             </IconButton>
           </div>
+          </Fade>
         </div>
       </div>
     </div>
