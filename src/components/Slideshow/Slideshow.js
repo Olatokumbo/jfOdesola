@@ -19,8 +19,8 @@ const Slideshow = () => {
 
       timeout={500}
     >
-      {items.map((data) => (
-        <img className={style.photo} src={data} alt="headerImages" />
+      {items.map((data, index) => (
+        <img key={index} className={style.photo} src={data} alt="headerImages" />
       ))}
     </Carousel>
   );

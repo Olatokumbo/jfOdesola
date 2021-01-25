@@ -52,9 +52,9 @@ const FaithLift = () => {
             width="560"
             height="315"
             src="https://www.youtube.com/embed/videoseries?list=PLc6HQFsla64aokhHbgB5Xu6_nK5SXPQKI"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
           <div className={style.videoContent}>
             <Typography>Please check out our YouTube Channel&nbsp;</Typography>

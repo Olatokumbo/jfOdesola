@@ -16,7 +16,7 @@ const Contact = () => {
         message
       })
       .then(() => {
-        alert("Message was sent");
+        alert("Your message has been sent to Pastor Odesola");
         setName("");
         setEmail("");
         setMessage("");
