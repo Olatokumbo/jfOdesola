@@ -6,6 +6,7 @@ import TwitterIcon from "@material-ui/icons/Twitter";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 import InstagramEmbed from "react-instagram-embed";
 import Socialbar from "../../components/Socialbar/Socialbar";
+import { FacebookProvider, EmbeddedPost } from 'react-facebook';
 import style from "./SocialMedia.module.css";
 
 const SocialMedia = () => {
@@ -25,11 +26,6 @@ const SocialMedia = () => {
         </IconButton>
       </div>
       <div className={style.container}>
-        <TwitterTimelineEmbed
-          sourceType="profile"
-          screenName="pastorjfodesola"
-          options={{ height: "100vh", width: 320 }}
-        />
         <InstagramEmbed
           url="https://www.instagram.com/p/CKLjCOgF_Wx/"
           clientAccessToken="1830281583805092|dc7dc8013da9f7a6b4f5479124e3c4cf"
@@ -42,6 +38,14 @@ const SocialMedia = () => {
           onSuccess={() => {}}
           onAfterRender={() => {}}
           onFailure={() => {}}
+        />
+        <FacebookProvider appId="1830281583805092">
+        <EmbeddedPost href="https://www.facebook.com/photo?fbid=238622497632411&set=p.238622497632411 " width="100" />
+      </FacebookProvider>
+      <TwitterTimelineEmbed
+          sourceType="profile"
+          screenName="pastorjfodesola"
+          options={{ height: "100vh", width: 320 }}
         />
       </div>
     </div>
