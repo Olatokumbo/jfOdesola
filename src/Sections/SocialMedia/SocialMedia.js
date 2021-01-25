@@ -14,13 +14,13 @@ const SocialMedia = () => {
       <Socialbar/>
       <Typography className={style.title}>Socials</Typography>
       <div>
-        <IconButton>
+        <IconButton onClick={()=>window.open("https://www.instagram.com/pastorjfodesola", "_blank")}>
           <InstagramIcon />
         </IconButton>
-        <IconButton>
+        <IconButton onClick={()=>window.open("https://www.facebook.com/JFOdesola", "_blank")}>
           <FacebookIcon />
         </IconButton>
-        <IconButton>
+        <IconButton onClick={()=>window.open("https://twitter.com/pastorjfodesola", "_blank")}>
           <TwitterIcon />
         </IconButton>
       </div>

@@ -17,6 +17,7 @@
 }
 .container > div:first-child{
     border: lightgray 2px solid !important;
+    height: fit-content !important;
 }
 .container > div {
     margin: 1rem !important;

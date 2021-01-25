@@ -5,6 +5,7 @@
     width: fit-content;
     display: flex;
     flex-direction: column;
+    z-index: 3;
 }
 
 .instagram, .facebook, .twitter, .youtube{

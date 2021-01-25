@@ -14,9 +14,9 @@ const FaithLift = () => {
           teachings.
         </Typography>
         <Typography compnent="p" className={style.content}>
-          Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
-          quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-          voluptas nulla pariatur?
+          Currently, Faith Lift Productions have produced over 20+ films ranging
+          from different genres. But our primary goal is to share
+          the Gospel of Jesus Christ with others.
         </Typography>
         <Fade top cascade>
           <div className={style.cardContainer}>
