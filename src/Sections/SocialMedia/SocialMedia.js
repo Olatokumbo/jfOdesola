@@ -30,7 +30,7 @@ const SocialMedia = () => {
           url="https://www.instagram.com/p/CKLjCOgF_Wx/"
           clientAccessToken="1830281583805092|dc7dc8013da9f7a6b4f5479124e3c4cf"
           maxWidth={320}
-          hideCaption={false}
+          hideCaption={true}
           containerTagName="div"
           protocol=""
           injectScript
@@ -40,7 +40,7 @@ const SocialMedia = () => {
           onFailure={() => {}}
         />
         <FacebookProvider appId="1830281583805092">
-        <EmbeddedPost href="https://www.facebook.com/photo?fbid=238622497632411&set=p.238622497632411 " width="100" />
+        <EmbeddedPost href="https://www.facebook.com/photo?fbid=238622497632411&set=p.238622497632411 " width="200" />
       </FacebookProvider>
       <TwitterTimelineEmbed
           sourceType="profile"
