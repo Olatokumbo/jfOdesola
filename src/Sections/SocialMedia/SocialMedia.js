@@ -11,7 +11,7 @@ import style from "./SocialMedia.module.css";
 
 const SocialMedia = () => {
   return (
-    <div className={style.socialMedia}>
+    <div className={style.socialMedia} id="socials">
       <Socialbar/>
       <Typography className={style.title}>Socials</Typography>
       <div>

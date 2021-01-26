@@ -28,4 +28,13 @@
         flex-direction: column;
         align-items: center;
     }
+    .socialMedia{
+        padding: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 357px){
+    .container > div:nth-child(2){
+        display: none;
+    }
 }

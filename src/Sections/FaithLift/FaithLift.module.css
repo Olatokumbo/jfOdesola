@@ -87,17 +87,23 @@
 }
 
 @media only screen and (max-width: 500px){
+    .faithLift{
+        padding: 0.5rem;
+    }
+    .video{
+        padding: 1rem;
+    }
     .content{
         width: auto !important;
     }
     .video > iframe{
-        width: 24rem !important;
+        width: 100% !important;
         /* height: 10rem !important; */
     }
     .videoContent{
         flex-direction: column;
     }
-    .videoContent >p:first-child{
+    .videoContent >p:first-child, .videoContent >p:last-child{
         font-size: 0.7rem !important;
     }
 }

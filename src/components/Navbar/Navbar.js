@@ -50,6 +50,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={1000}
+            onClick={()=>setButtonState(false)}
           >
             <Typography>Home</Typography>
           </Link>
@@ -113,6 +114,19 @@ const Navbar = () => {
               onClick={handleClose}
             >
               <Typography>Gallery</Typography>
+            </Link>
+          </li>
+          <li className={style.menuItem}>
+            <Link
+              activeClass="active"
+              to="socials"
+              offset={-80}
+              spy={true}
+              smooth={true}
+              duration={500}
+              onClick={handleClose}
+            >
+              <Typography>Socials</Typography>
             </Link>
           </li>
         </Menu>
