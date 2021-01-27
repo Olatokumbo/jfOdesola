@@ -3,14 +3,17 @@ import { TextField, Typography, Button } from "@material-ui/core";
 import Envelope from "../../assets/envelope.png";
 import Fade from "react-reveal/Fade";
 import axios from "axios";
+import CircularProgress from '@material-ui/core/CircularProgress';
 import style from "./Contact.module.css";
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [buttonState, setButtonState] = useState(false); 
   const sendMessage = () => {
+    setButtonState(true);
     axios
-      .post("https://jfodesola-api.herokuapp.com/mail", {
+      .post("https://jfodesola-api.herokuapp.com/mai", {
         name,
         from: email,
         message
@@ -20,8 +23,10 @@ const Contact = () => {
         setName("");
         setEmail("");
         setMessage("");
+        setButtonState(false);
       })
       .catch((err) => {
+        setButtonState(false);
         alert(err.message);
       });
   };
@@ -75,12 +80,13 @@ const Contact = () => {
               variant="contained"
               color="secondary"
               disabled={
-                !(!!name && !!email && !!message)
+                !(!!name && !!email && !!message) || (buttonState)
               }
               onClick={sendMessage}
             >
               Submit
             </Button>
+            {buttonState ? <CircularProgress/> : <div></div>}
             {/* </form> */}
           </div>
         </Fade>

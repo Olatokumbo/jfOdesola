@@ -24,6 +24,7 @@ const Navbar = () => {
 
   const handleClose = () => {
     setAnchorEl(null);
+    setButtonState(false);
   };
 
   window.addEventListener("scroll", changeBackground);
@@ -63,6 +64,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
+            onClick={()=>setButtonState(false)}
           >
             <Typography>About</Typography>
           </Link>
@@ -138,6 +140,7 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={1000}
+            onClick={()=>setButtonState(false)}
           >
             <Typography>Contact</Typography>
           </Link>
