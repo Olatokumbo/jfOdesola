@@ -32,7 +32,7 @@
 .menu {
     display: flex;
     flex-direction: row;
-    background-color: #1010106b;
+    /* background-color: #1010106b; */
     border-radius: 10px;
 }
 .menuItem{

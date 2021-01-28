@@ -1,6 +1,6 @@
 import React from "react";
-import { Typography, Card, CardContent, Link } from "@material-ui/core";
-import Fade from "react-reveal/Fade";
+import { Typography, Link } from "@material-ui/core";
+// import Fade from "react-reveal/Fade";
 import style from "./FaithLift.module.css";
 
 const FaithLift = () => {
@@ -18,7 +18,7 @@ const FaithLift = () => {
           from different genres. But our primary goal is to share
           the Gospel of Jesus Christ with others.
         </Typography>
-        <Fade top cascade>
+        {/* <Fade top cascade>
           <div className={style.cardContainer}>
             <Card className={style.card1}>
               <CardContent className={style.cardContent}>
@@ -43,7 +43,7 @@ const FaithLift = () => {
               </CardContent>
             </Card>
           </div>
-        </Fade>
+        </Fade> */}
       </div>
       <div className={style.right}>
         <div className={style.video}>

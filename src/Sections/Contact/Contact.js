@@ -13,7 +13,7 @@ const Contact = () => {
   const sendMessage = () => {
     setButtonState(true);
     axios
-      .post("https://jfodesola-api.herokuapp.com/mai", {
+      .post("https://jfodesola-api.herokuapp.com/mail", {
         name,
         from: email,
         message
