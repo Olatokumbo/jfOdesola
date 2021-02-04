@@ -1,0 +1,27 @@
+.loadingScreen{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+.profile{
+    width: 8rem !important;
+    height: auto;
+    border-radius: 10px;
+    animation: yourAnimation 5s ease 0s infinite normal forwards;
+    margin: 2rem !important
+}
+
+@keyframes yourAnimation {
+0.0% {transform: scale(1) translate(-100px, 0) skew(0deg);}
+39.9%{transform: scale(1) translate(100px, 0) skew(-5deg);}
+45.3%{transform: scale(1) translate(100px, -6px) skew(0deg);}
+5.1%{transform: scale(1) translate(-100px, 0) skew(-12deg);}
+50.3%{transform: scale(1) translate(100px, 0px) skew(0deg);}
+55.3%{transform: scale(1) translate(100px, -10px) skew(0deg);}
+60.3%{transform: scale(1) translate(100px, 0px) skew(5deg);}
+95.1%{transform: scale(1) translate(-100px, 0) skew(12deg);}
+100%{transform: scale(1) translate(-100px, 0) skew(0deg);}
+}

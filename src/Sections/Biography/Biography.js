@@ -2,7 +2,7 @@ import React from "react";
 import { Typography } from "@material-ui/core";
 import Pulse from 'react-reveal/Pulse';
 import style from "./Biography.module.css";
-const Biography = ({show}) => {
+const Biography = ({show, content}) => {
   if(show)
   return (
     <div className={style.biography}>

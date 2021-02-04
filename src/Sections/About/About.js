@@ -4,9 +4,10 @@ import Biography from "../../Sections/Biography/Biography";
 import Profile from "../../assets/main.jpg";
 import Rectangle from "../../assets/rectangle.png";
 import Bounce from "react-reveal/Bounce";
+import { connect } from "react-redux";
 import style from "./About.module.css";
 
-const About = () => {
+const About = ({aboutHeader1, aboutHeader2, aboutInfo}) => {
   const [readMoreState, setReadMoreState] = useState(true);
   return (
     <div className={style.aboutMain}>
@@ -22,19 +23,10 @@ const About = () => {
             <Typography className={style.header}>About JFO</Typography>
             <div className={style.content}>
               <Typography component="p">
-                Johnson Funso Odesola is a distinguished specialist in Divinity
-                after many academic forays through over nine local and
-                international tertiary institutions where he obtained six PhD's,
-                two masters degrees, a postgraduate diploma, three Bachelor's
-                degrees, a Higher National Diploma, an Ordinary national
-                diploma, and Diplomas in various academic and theological
-                Disciplines.
+               {aboutHeader1}
               </Typography>
               <Typography>
-                Following over forty meritorious years dedicated service in
-                RCCG, odesola was appointed Assistant General Overseer on Admin
-                & personnel and doubles as Pastor In charge (PIC), RCCG Region
-                1, Ebute Metta, Lagos.
+                {aboutHeader2}
               </Typography>
             </div>
             <div className={style.buttonContainer}>
@@ -59,9 +51,17 @@ const About = () => {
           </div>
         </Bounce>
       </div>
-      <Biography show={!readMoreState} />
+      <Biography show={!readMoreState} content={aboutInfo} />
     </div>
   );
 };
 
-export default About;
+const mapStateToProps = (state) => {
+  return {
+    aboutHeader1: state.info.info.aboutHeader1,
+    aboutHeader2: state.info.info.aboutHeader2,
+    aboutInfo:state.info.info.aboutInfo
+  };
+};
+
+export default connect (mapStateToProps)(About);

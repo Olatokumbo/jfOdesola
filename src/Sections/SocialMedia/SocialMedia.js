@@ -7,9 +7,10 @@ import { TwitterTimelineEmbed } from "react-twitter-embed";
 import InstagramEmbed from "react-instagram-embed";
 import Socialbar from "../../components/Socialbar/Socialbar";
 import { FacebookProvider, EmbeddedPost } from 'react-facebook';
+import { connect } from "react-redux";
 import style from "./SocialMedia.module.css";
 
-const SocialMedia = () => {
+const SocialMedia = ({facebookUrl,instagramUrl}) => {
   return (
     <div className={style.socialMedia} id="socials">
       <Socialbar/>
@@ -27,7 +28,7 @@ const SocialMedia = () => {
       </div>
       <div className={style.container}>
         <InstagramEmbed
-          url="https://www.instagram.com/p/CKLjCOgF_Wx/"
+          url={instagramUrl}
           clientAccessToken="1830281583805092|dc7dc8013da9f7a6b4f5479124e3c4cf"
           maxWidth={320}
           hideCaption={true}
@@ -40,7 +41,7 @@ const SocialMedia = () => {
           onFailure={() => {}}
         />
         <FacebookProvider appId="1830281583805092">
-        <EmbeddedPost href="https://www.facebook.com/photo?fbid=238622497632411&set=p.238622497632411 " width="200" />
+        <EmbeddedPost href={facebookUrl} width="200" />
       </FacebookProvider>
       <TwitterTimelineEmbed
           sourceType="profile"
@@ -52,4 +53,11 @@ const SocialMedia = () => {
   );
 };
 
-export default SocialMedia;
+const mapStateToProps = (state) =>{
+  return{
+    facebookUrl: state.info.info.facebookUrl,
+    instagramUrl: state.info.info.instagramUrl
+  }
+}
+
+export default connect (mapStateToProps)(SocialMedia);
