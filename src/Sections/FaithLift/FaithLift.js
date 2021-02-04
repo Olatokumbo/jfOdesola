@@ -15,7 +15,7 @@ const FaithLift = () => {
         </Typography>
         <Typography compnent="p" className={style.content}>
           Currently, Faith Lift Productions have produced over 20+ films ranging
-          from different genres. But our primary goal is to share
+          from different genres. Our primary goal with our Films is to share
           the Gospel of Jesus Christ with others.
         </Typography>
         {/* <Fade top cascade>

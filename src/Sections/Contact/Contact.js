@@ -71,9 +71,6 @@ const Contact = () => {
               required
               onChange={(e)=>setMessage(e.target.value)}
               value={message}
-              InputLabelProps={{
-                shrink: true,
-              }}
             />
             <Button
               className={style.submitBtn}
