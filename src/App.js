@@ -8,6 +8,7 @@ import Galleries from "./Sections/Galleries/Galleries";
 import SocialMedia from "./Sections/SocialMedia/SocialMedia";
 import Contact from "./Sections/Contact/Contact";
 import Footer from "./Sections/Footer/Footer";
+import LoadingScreen from "./components/LoadingScreen/LoadingScreen";
 import { connect } from "react-redux";
 import * as actionCreator from "./store/actions/info";
 import "./App.css";
@@ -31,7 +32,7 @@ const App = ({ fetchInfo, data }) => {
         </div>
     )
   }
-  return (<div>Loading...</div>)
+  return (<LoadingScreen/>)
 };
 
 const mapStateToProps = (state) => {
