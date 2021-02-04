@@ -10,8 +10,8 @@ export const fetchInfo = () => {
       .then((snapshot) => {
         dispatch({ type: actionTypes.FETCH_INFO, info: snapshot.data() });
       })
-      .then(() => {
-        // dispatch({ type: actionTypes.LIST_CITIES, cities });
-      });
+      .catch((err)=>{
+        alert(err.message)
+      })
   };
 };
