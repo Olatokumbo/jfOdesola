@@ -2,8 +2,9 @@ import { Typography } from "@material-ui/core";
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Slideshow from "../../components/Slideshow/Slideshow";
+import { connect } from "react-redux";
 import style from "./Home.module.css";
-const Home = () => {
+const Home = ({slideshow}) => {
   return (
     <div className={style.home} id="home">
       <Navbar />
@@ -14,11 +15,17 @@ const Home = () => {
           </Typography>
         </div>
         <div className={style.right}>
-          <Slideshow/>
+          <Slideshow images={slideshow}/>
         </div>
       </div>
     </div>
   );
 };
 
-export default Home;
+const mapStateToProps = (state) => {
+  return {
+    slideshow: state.info.info.slideshow,
+  };
+};
+
+export default connect (mapStateToProps)(Home);

@@ -2,6 +2,7 @@ import { firestore } from "../../firebase/firebase";
 import * as actionTypes from "./actionTypes";
 export const fetchInfo = () => {
   return (dispatch) => {
+    console.log("Here");
     firestore
       .collection("info")
       .doc("about")

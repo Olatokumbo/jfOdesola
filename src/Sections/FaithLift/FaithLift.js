@@ -1,22 +1,19 @@
 import React from "react";
 import { Typography, Link } from "@material-ui/core";
 // import Fade from "react-reveal/Fade";
+import { connect } from "react-redux";
 import style from "./FaithLift.module.css";
 
-const FaithLift = () => {
+const FaithLift = ({faithLiftHeader1, faithLiftHeader2, channelLink, playListLink}) => {
   return (
     <div className={style.faithLift} id="faithlift">
       <div className={style.left}>
         <Typography className={style.title}>Faith Lift Productions</Typography>
         <Typography component="p" className={style.content}>
-          FAITHLIFT PRODUCTIONS & J.F. ODESOLA FILMS is a movie production
-          outfit that produces high quality movies with decent christian
-          teachings.
+          {faithLiftHeader1}
         </Typography>
         <Typography compnent="p" className={style.content}>
-          Currently, Faith Lift Productions have produced over 20+ films ranging
-          from different genres. Our primary goal with our Films is to share
-          the Gospel of Jesus Christ with others.
+          {faithLiftHeader2}
         </Typography>
         {/* <Fade top cascade>
           <div className={style.cardContainer}>
@@ -51,7 +48,7 @@ const FaithLift = () => {
             title="q3w4e56"
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/videoseries?list=PLc6HQFsla64aokhHbgB5Xu6_nK5SXPQKI"
+            src={playListLink}
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
@@ -61,7 +58,7 @@ const FaithLift = () => {
             <Typography>
               <Link
                 target="_blank"
-                href="https://www.youtube.com/channel/UCbvSvzeLnUrT9XfYqSWeemQ"
+                href={channelLink}
               >
                 Here
               </Link>
@@ -72,5 +69,13 @@ const FaithLift = () => {
     </div>
   );
 };
+const mapStateToProps = (state) => {
+  return {
+    faithLiftHeader1: state.info.info.faithLiftHeader1,
+    faithLiftHeader2: state.info.info.faithLiftHeader2,
+    channelLink: state.info.info.channelLink,
+    playListLink: state.info.info.playListLink
+  };
+};
 
-export default FaithLift;
+export default connect(mapStateToProps)(FaithLift);
